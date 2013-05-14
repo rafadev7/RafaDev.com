@@ -12,9 +12,9 @@ Ou você pode simplesmente dar um fork neste repositório e hospedar gratúitame
 
 ## Sobre mim
 
-Sou um desenvolvedor Brasileiro apaixonado pelo que faço e imerso mundo da programação desde 2008 quando fiz do meu robbie profissão, meu nome é Rafael Henrique Moreira mas pode me chamar de RafaDev.
+Sou um desenvolvedor Brasileiro apaixonado pelo que faço e estou imerso no mundo da programação desde 2008 quando fiz do meu hobby  profissão, meu nome é Rafael Henrique Moreira mas pode me chamar de RafaDev.
 
-Estou me formando em Ciências da Computação na Universidade Federal de Sergipe e já trabalhei profissionalmente para várias empresas sem nunca deixar de tocar meus projetos pessoais.
+Estou me formando em Ciências da Computação na Universidade Federal de Sergipe e já trabalhei profissionalmente para várias empresas sem nunca deixar de tocar meus projetos pessoais que são os que mais me dão mais frutos de aprendizado e satisfação pessoal.
 
 ## Licença
 
