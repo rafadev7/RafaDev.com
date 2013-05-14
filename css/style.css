@@ -18,6 +18,7 @@ h4 {
   font-size: 15.5px;
 }
 
+/* ------ HEADER ------ */
 .logo {
   text-align: center;
 }
@@ -41,9 +42,6 @@ h4 {
 .navbar .nav>li>a.active, .navbar .nav>li>a.active:hover {
   color: #000;
 }
-.navbar .nav>.active>a{
-  color: #000;
-}
 .navbar .nav>li>a:hover {
   opacity: 1;
 }
@@ -51,11 +49,11 @@ h4 {
 
 
 .sidebar  h1, .sidebar  h2, .sidebar  h3, .sidebar h4{
-padding: 10px 0px;
-border-bottom: 1px dashed #aaa;
-margin-bottom: 10px;
-line-height: 16px;
-text-shadow: 0px 1px 0px #fff;
+  padding: 10px 0px;
+  border-bottom: 1px dashed #aaa;
+  margin-bottom: 10px;
+  line-height: 16px;
+  text-shadow: 0px 1px 0px #fff;
 }
 
 .container > footer {
