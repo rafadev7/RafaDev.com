@@ -38,6 +38,9 @@ h4 {
   color: #000;
   opacity: 0.7;
 }
+.navbar .nav>.active>a{
+  color: #000;
+}
 .navbar .nav>li>a:hover {
   opacity: 0.9;
 }
@@ -145,6 +148,10 @@ text-shadow: 0px 1px 0px #fff;
 
 .pagination span.previous, .pagination span.next {
   margin: 0 10px;
+}
+
+.pagination ul>li>a{
+  color: #222;
 }
 
 .pagination ul>.disabled>span>i, .pagination ul>.disabled>a>i{
