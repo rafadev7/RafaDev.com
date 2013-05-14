@@ -9,6 +9,17 @@ body {
   }
 }
 
+.logo {
+  height:80px;
+  text-align: center;
+}
+
+@media (max-width: 767px){
+  .logo {
+    display:none;
+  }
+}
+
 /* ----- NAVBAR ----- */
 .navbar {
   -webkit-box-shadow: 0 4px 8px rgba(0,0,0,.15);
