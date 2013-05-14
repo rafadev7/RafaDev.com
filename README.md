@@ -1,4 +1,4 @@
-# RafaDev.com
+# [RafaDev.com][]
 
 Este é um blog pessoal e seu propósito é o compartilhamento de informações relevantes no mundo do desenvolvimento, seja ele mobile, web, ou desktop.
 
@@ -20,6 +20,7 @@ Estou me formando em Ciências da Computação na Universidade Federal de Sergip
 
 Este blog foi criado por Rafael Henrique Moreira sob a licença Creative Commons.
 
+[RafaDev.com]: http://rafadev.com/
 [jekyll]: http://jekyllrb.com/
 [twitter bootstrap]: http://twitter.github.io/bootstrap
 [github pages]: http://pages.github.com/
