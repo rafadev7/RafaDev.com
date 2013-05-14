@@ -8,14 +8,9 @@
   text-align: center;
 }
 
-@media (max-width: 767px){
-  .logo {
-    display:none;
-  }
-}
-
 /* ----- NAVBAR ----- */
 .navbar {
+  margin-top: 20px;
   -webkit-box-shadow: 0 4px 8px rgba(0,0,0,.15);
   -moz-box-shadow: 0 4px 8px rgba(0,0,0,.15);
   box-shadow: 0 4px 8px rgba(0,0,0,.15);
@@ -50,7 +45,7 @@ text-shadow: 0px 1px 0px #fff;
 
 
 .post {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px 4px 4px 4px;
      -moz-border-radius: 4px 4px 4px 4px;
@@ -73,13 +68,13 @@ text-shadow: 0px 1px 0px #fff;
 
 /* Page header tweaks */
 .page-header {
+  color: #555;
   border: 1px solid #ddd;
   border-bottom: 1px dashed #ddd;
   margin: 0;
   -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-  
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
   
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
@@ -93,15 +88,14 @@ text-shadow: 0px 1px 0px #fff;
 
 
 .page-header a {
-  color: #555;
+  color: #777;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   float: none;
   padding: 10px 15px 10px;
-  color: #777;
   text-decoration: none;
 }
 
-.page-header a:hover {
+.page-header a {
   color: #555;
 }
 
