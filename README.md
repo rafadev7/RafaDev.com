@@ -18,7 +18,7 @@ Estou me formando em Ciências da Computação na Universidade Federal de Sergip
 
 ## Licença
 
-Este blog foi criado por Rafael Henrique Moreira sob a licença MIT.
+Este blog foi criado por Rafael Henrique Moreira sob a licença Creative Commons.
 
 [jekyll]: http://jekyllrb.com/
 [twitter bootstrap]: http://twitter.github.io/bootstrap
