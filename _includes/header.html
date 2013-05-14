@@ -1,41 +1,36 @@
-<header>
+<header class="container">
 <div class="logo hidden-phone">
-<img src="{{ site.url }}/img/rafadev-logo.png">
+  <a href="{{ site.baseurl }}" class="active">
+    <img src="{{ site.url }}/img/rafadev-logo.png">
+  </a>
 </div>
 
+<div class="row">
+<div class="span9">
 <div class="navbar">
   <div class="navbar-inner">
-    <nav  class="container">
-      
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      
-      <a class="brand" href="{{ site.baseurl }}">{{ site.title }}</a>
-      
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          {% assign page_url = page.url | remove:'index.html' %}
-          {% if page_url == site.baseurl %}
-          <li class="active"><a href="{{ site.baseurl }}" class="active">Home</a></li>
-          {% else %}
-          <li><a href="{{ site.baseurl }}">Home</a></li>
-          {% endif %}
-          
-          {% for node in site.pages %}
-            {% if node.group == 'nav' %}
-              {% if node.url == page.url %}
-                <li class="active"><a href="{{ node.url | remove:'index.html' }}" class="active">{{ node.title }}</a></li>
-              {% else %}
-                <li><a href="{{ node.url | remove:'index.html' }}">{{ node.title }}</a></li>
-              {% endif %}
+    <nav>
+      <ul class="nav">
+        {% assign page_url = page.url | remove:'index.html' %}
+        {% if page_url == site.baseurl %}
+        <li class="active"><a href="{{ site.baseurl }}" class="active">Home</a></li>
+        {% else %}
+        <li><a href="{{ site.baseurl }}">Home</a></li>
+        {% endif %}
+        
+        {% for node in site.pages %}
+          {% if node.group == 'nav' %}
+            {% if node.url == page.url %}
+              <li class="active"><a href="{{ node.url | remove:'index.html' }}" class="active">{{ node.title }}</a></li>
+            {% else %}
+              <li><a href="{{ node.url | remove:'index.html' }}">{{ node.title }}</a></li>
             {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </nav>
   </div>
+</div>
+</div>
 </div>
 </header>

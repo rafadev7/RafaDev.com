@@ -1,8 +1,3 @@
-body {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 20px;
-}
 @media (max-width: 979px){
   body {
   padding-top: 0;
@@ -10,7 +5,6 @@ body {
 }
 
 .logo {
-  height:80px;
   text-align: center;
 }
 
@@ -25,28 +19,6 @@ body {
   -webkit-box-shadow: 0 4px 8px rgba(0,0,0,.15);
   -moz-box-shadow: 0 4px 8px rgba(0,0,0,.15);
   box-shadow: 0 4px 8px rgba(0,0,0,.15);
-}
-/* ----- I don't liked this padding... ----- */
-@media (max-width: 979px){
-  .navbar-fixed-top .navbar-inner {
-    padding: 0px;
-  }
-}
-.navbar .brand {
-  font-weight: bold;
-  color: #eee;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.2), 1px 1px 4px rgba(0,0,0,.9);
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
-  border-left: 0px;
-}
-.navbar .brand:hover{
-  color: #888;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.01), 1px 1px 3px rgba(0,0,0,.4);
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
 }
 
 .navbar .nav>li>a {
@@ -103,18 +75,34 @@ text-shadow: 0px 1px 0px #fff;
 .page-header {
   border: 1px solid #ddd;
   border-bottom: 1px dashed #ddd;
-  background-color: #f5f5f5;
-  padding: 10px 20px 10px;
   margin: 0;
   -webkit-border-radius: 4px 4px 0 0;
-     -moz-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  
+  
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
+  background-image: -o-linear-gradient(top,#fff,#f2f2f2);
+  background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
 }
 
 
 .page-header a {
   color: #555;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777;
+  text-decoration: none;
+}
+
+.page-header a:hover {
+  color: #555;
 }
 
 .topbar .btn {
@@ -154,6 +142,7 @@ text-shadow: 0px 1px 0px #fff;
   clear: both;
   border-top: 1px dashed #ccc;
   padding-top: 15px;
+  padding-bottom: 20px;
   color: #666;
 }
 
