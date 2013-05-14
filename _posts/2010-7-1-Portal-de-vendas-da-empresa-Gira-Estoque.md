@@ -7,7 +7,7 @@ Portal desenvolvido para empresa **Gira Estoque Comercial de Produtos Ltda. Me.*
 
 <div style="clear: both; text-align: center;">
   <a href="{{ site.url }}/img/portifolio/giraestoque.png">
-    <img src="{{ site.url }}/img/portifolio/giraestoque.png" border="0" height="320" width="120">
+    <img class="img-polaroid" src="{{ site.url }}/img/portifolio/giraestoque.png" border="0" height="320" width="120">
 </a>
 </div>
 

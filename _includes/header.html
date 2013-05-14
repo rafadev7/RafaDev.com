@@ -20,15 +20,25 @@
       <li><a href="{{ site.baseurl }}">Home</a></li>
       {% endif %}
       
-      {% for node in site.pages %}
-        {% if node.group == 'nav' %}
-          {% if node.url == page.url %}
-            <li class="active"><a href="{{ node.url | remove:'index.html' }}" class="active">{{ node.title }}</a></li>
-          {% else %}
-            <li><a href="{{ node.url | remove:'index.html' }}">{{ node.title }}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+      
+      {% if page_url == site.archive_path %}
+      <li class="active"><a href="{{ site.archive_path }}" class="active"><i class="icon-folder-open"></i> Arquivo</a></li>
+      {% else %}
+      <li><a href="{{ site.archive_path }}"><i class="icon-folder-open"></i> Arquivo</a></li>
+      {% endif %}
+      
+      {% if page_url == site.tags_path %}
+      <li class="active"><a href="{{ site.tags_path }}" class="active"><i class="icon-tags"></i> Tags</a></li>
+      {% else %}
+      <li><a href="{{ site.tags_path }}"><i class="icon-tags"></i> Tags</a></li>
+      {% endif %}
+      
+      {% if page_url == site.map_path %}
+      <li class="active"><a href="{{ site.map_path }}" class="active"><i class="icon-search"></i> Mapa</a></li>
+      {% else %}
+      <li><a href="{{ site.map_path }}"><i class="icon-search"></i> Mapa</a></li>
+      {% endif %}
+      
     </ul>
   </div>
 </nav>
