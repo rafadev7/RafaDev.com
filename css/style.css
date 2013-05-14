@@ -36,6 +36,12 @@ h4 {
 .navbar .nav>li>a {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+.navbar .nav>li>a>i {
+  opacity: 0.7;
+}
+.navbar .nav>li>a>i:hover {
+  opacity: 0.9;
+}
 
 
 
@@ -140,6 +146,10 @@ text-shadow: 0px 1px 0px #fff;
 
 .pagination span.previous, .pagination span.next {
   margin: 0 10px;
+}
+
+.pagination ul>.disabled>span>i, .pagination ul>.disabled>a>i{
+  opacity: 0.7;
 }
 
 
