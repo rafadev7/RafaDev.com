@@ -1,6 +1,7 @@
 ---
 layout: post
 title : Portal de vendas da empresa Gira Estoque
+description: Este portal de vendas um dos meus trabalhos de desenvolvimento web somando meu portifólio
 tags : [portfólio]
 ---
 Portal desenvolvido para empresa **Gira Estoque Comercial de Produtos Ltda. Me.** de Aracaju quando trabalhei lá como desenvolvedor web entre o período 12/2009 à 06/2010.
