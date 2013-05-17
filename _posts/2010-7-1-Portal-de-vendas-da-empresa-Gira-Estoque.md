@@ -6,7 +6,7 @@ tags : [portfólio]
 ---
 Portal desenvolvido para empresa **Gira Estoque Comercial de Produtos Ltda. Me.** de Aracaju quando trabalhei lá como desenvolvedor web entre o período 12/2009 à 06/2010.
 
-<div style="clear: both; text-align: center;">
+<div style="clear: both; text-align: center;" height="300" width="112">
   <a class="thumbnail" href="{{ site.url }}/img/portifolio/giraestoque.png">
     <img src="{{ site.url }}/img/portifolio/giraestoque-thumbnail.png" height="300" width="112">
   </a>
