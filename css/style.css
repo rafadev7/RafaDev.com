@@ -5,6 +5,10 @@
   }
 }
 
+body {
+  background-image: url('{{ site.url }}/img/groovepaper.png');
+}
+
 h1 {
   font-size: 31.5px;
 }
@@ -18,6 +22,7 @@ h4 {
   font-size: 15.5px;
 }
 
+/* ------ HEADER ------ */
 .logo {
   text-align: center;
 }
@@ -29,20 +34,15 @@ h4 {
   -moz-box-shadow: 0 4px 8px rgba(0,0,0,.15);
   box-shadow: 0 4px 8px rgba(0,0,0,.15);
 }
-
 .navbar .nav {
   margin-right: 0;
 }
-.navbar .nav>li>a, .navbar .nav>li>a:hover  {
+.navbar .nav>.active>a, .navbar .nav>li>a.active, .navbar .nav>li>a.active:hover {
+  color: #000;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  color: #000;
+}
+.navbar .nav>li>a, .navbar .nav>li>a.active  {
   opacity: 0.7;
-}
-.navbar .nav>li>a.active, .navbar .nav>li>a.active:hover {
-  color: #000;
-}
-.navbar .nav>.active>a{
-  color: #000;
 }
 .navbar .nav>li>a:hover {
   opacity: 1;
@@ -50,27 +50,12 @@ h4 {
 
 
 
-.sidebar  h1, .sidebar  h2, .sidebar  h3, .sidebar h4{
-padding: 10px 0px;
-border-bottom: 1px dashed #aaa;
-margin-bottom: 10px;
-line-height: 16px;
-text-shadow: 0px 1px 0px #fff;
-}
 
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
-}
-
-
+/* ----- POSTS ----- */
 .post {
   margin-bottom: 40px;
   border: 1px solid #ddd;
   overflow: hidden;
-  word-break: break-all;
   word-wrap: break-word;
   -webkit-border-radius: 4px 4px 4px 4px;
      -moz-border-radius: 4px 4px 4px 4px;
@@ -80,39 +65,21 @@ text-shadow: 0px 1px 0px #fff;
           box-shadow: 0 4px 8px rgba(0,0,0,.15);
 }
 
-/* The white background content wrapper */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-top: 0;
-  -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-}
 
-/* Page header tweaks */
+/* ----- POST/PAGE HEADER ----- */
 .page-header {
   color: #555;
   border: 1px solid #ddd;
   border-bottom: 1px dashed #ddd;
   padding: 10px 15px 10px;
   margin: 0;
+  background-color: #fafafa;
   
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   
   -webkit-border-radius: 4px 4px 0 0;
      -moz-border-radius: 4px 4px 0 0;
           border-radius: 4px 4px 0 0;
-  
-  background-color: #fafafa;
-  background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
-  background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
-  background-image: -o-linear-gradient(top,#fff,#f2f2f2);
-  background-image: linear-gradient(to bottom,#fff,#f2f2f2);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
 }
 
 @media (max-width: 767px){
@@ -127,6 +94,7 @@ text-shadow: 0px 1px 0px #fff;
 
 .page-header a {
   color: #777;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   text-decoration: none;
 }
 
@@ -134,9 +102,29 @@ text-shadow: 0px 1px 0px #fff;
   color: #555;
 }
 
-.topbar .btn {
-  border: 0;
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
 }
+
+/* ----- SIDEBAR ----- */
+.sidebar  h1, .sidebar  h2, .sidebar  h3, .sidebar h4{
+  padding: 10px 0px;
+  border-bottom: 1px dashed #aaa;
+  margin-bottom: 10px;
+  line-height: 16px;
+  font-size: 16px;
+  text-shadow: 0px 1px 0px #fff;
+}
+.sidebar>ul.related-posts>li {
+  margin-bottom: 10px;
+}
+
 
 /* -------    Pagination    ----------- */
 .pagination {
@@ -157,30 +145,25 @@ text-shadow: 0px 1px 0px #fff;
   color: #222;
 }
 
+.pagination ul>li>a.current-page, .pagination ul>li>span.current-page{
+  color: #999;
+  cursor: default;
+  background-color: transparent;
+}
+
 .pagination ul>.disabled>span>i, .pagination ul>.disabled>a>i{
   opacity: 0.7;
 }
 
 
-.highlight {
-  padding: 10px 0;
-  width: 100%;
-  overflow: scroll;
-}
-.highlight{
-  background: #333;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 10px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.5);
-}
-.highlight pre {
-  background: transparent;
-  margin: 0;
-  border: 0px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
+/* ----- FOOTER ----- */
+.container > footer {
+  margin-top: 20px;
+}
+.container > footer p {
+  text-align: center; /* center align it with the container */
+}
 .footer {
   clear: both;
   border-top: 1px dashed #ccc;
@@ -188,7 +171,6 @@ text-shadow: 0px 1px 0px #fff;
   padding-bottom: 20px;
   color: #666;
 }
-
 .footer img.cc {
   display: inline-block;
   vertical-align: -0.2em;
@@ -204,8 +186,8 @@ text-shadow: 0px 1px 0px #fff;
   opacity:1;
 }
 
-/* ---------------- tag_box  ----------------- */
 
+/* ----- TAGS ----- */
 .tag_box {
 	list-style:none;
 	margin:0;
@@ -222,4 +204,26 @@ text-shadow: 0px 1px 0px #fff;
 	vertical-align:top;
 	font-size:0.8em;
   color: #ff0;
+}
+
+/* ----- CODIGO HIGHLIGHT IN POST ----- */
+.highlight{
+  padding: 10px 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 10px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.5);
+}
+.highlight pre {
+  background: transparent;
+  margin: 0;
+  border: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.highlight>pre>code.console>span.go{
+  color: #eee;
+  background-color: transparent;
 }
