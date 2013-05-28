@@ -1,6 +1,7 @@
 ---
 layout: post
 title : Modelo para escrever um artigo para o portal
+description: Aqui vem a descrição do artigo a ser escrito
 tags : [conceito, básico]
 published: false
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title : Como quebrar automaticamente textos longos com css
+description: Este post vai te ensinar como fazer a quebra de textos grandes com a propriedade word-wrap do css
 tags : [css]
 ---
 Esta é uma propriedade **CSS** raramente utilizada pelos desenvolvedores e extremamente útil, o <code>word-wrap</code>. Com ele você pode forçar palavras longas (sem espaços) à quebrar e ir para próxima linha sem fazer uso de nenhum **Script**, basta especificar a propriedade <code>break-word</code> na no <code>style</code> de seu elemento <code>HTML</code>.
