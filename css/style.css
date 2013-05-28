@@ -232,7 +232,9 @@ h4 {
 /* ----- ICONS ----- */
 .icon-twitter {
   background-image: url("/img/icon-twitter.png");
+  background-position: 0 0;
 }
 .icon-feed {
   background-image: url("/img/icon-feed.png");
+  background-position: 0 0;
 }
