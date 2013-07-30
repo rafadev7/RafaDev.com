@@ -1,6 +1,6 @@
 ---
 layout: post
-title : Infográfico: online em 60 segundos
+title : Infográfico de atividades online em 60 segundos
 description: A quantidade de atividades Online que é feita a cada 60 segundos
 tags : [informativo]
 ---
